@@ -34,6 +34,7 @@ SERVICES=(
     ping
     versionchooser
     wifi
+    rov_server
 )
 
 # We need to install loguru and appdirs since they may be used inside setup.py
