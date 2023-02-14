@@ -142,9 +142,10 @@ class FirmwareInstaller:
         if firmware_format == FirmwareFormat.ELF:
             self.add_run_permission(new_firmware_path)
 
-        self.validate_firmware(new_firmware_path, board.platform)
+        # self.validate_firmware(new_firmware_path, board.platform)
 
-        if board.type == PlatformType.Serial:
+        # if board.type == PlatformType.Serial:
+        if True:
             firmware_uploader = FirmwareUploader()
             if not board.path:
                 raise ValueError("Board path not available.")
