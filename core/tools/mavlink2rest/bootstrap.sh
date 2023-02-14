@@ -5,10 +5,10 @@ set -e
 
 LOCAL_BINARY_PATH="/usr/bin/mavlink2rest"
 
-VERSION=t0.11.12
+VERSION=t0.11.8
 
 # By default we install armv7
-REMOTE_BINARY_URL="https://github.com/patrickelectric/mavlink2rest/releases/download/${VERSION}/mavlink2rest-armv7-unknown-linux-musleabihf"
+REMOTE_BINARY_URL="https://github.com/gaojulong/mavlink2rest/releases/download/${VERSION}/mavlink2rest-armv7-unknown-linux-gnueabihf"
 if [[ "$(uname -m)" == "x86_64"* ]]; then
     REMOTE_BINARY_URL="https://github.com/patrickelectric/mavlink2rest/releases/download/${VERSION}/mavlink2rest-x86_64-unknown-linux-musl"
 fi
